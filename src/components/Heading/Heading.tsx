@@ -1,5 +1,5 @@
-import HeadingProps from "./interfaces";
-import * as S from "./styles";
+import HeadingProps from './interfaces';
+import * as S from './styles';
 
 export const Heading = ({
   children,

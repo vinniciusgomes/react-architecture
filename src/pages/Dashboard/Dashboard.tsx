@@ -1,5 +1,6 @@
-import { Heading } from "components/Heading/styles";
-import * as S from "./styles";
+import { Heading } from 'components/Heading/styles';
+
+import * as S from './styles';
 
 export function Dashboard() {
   return (

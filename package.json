@@ -42,7 +42,21 @@
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.3.0",
     "@types/styled-components": "^5.1.14",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-import-helpers": "^1.1.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-security": "^1.4.0",
     "husky": "^7.0.2",
+    "prettier": "^2.4.1",
     "source-map-explorer": "^2.5.2"
   },
   "resolutions": {
@@ -55,7 +69,6 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
       "react-app/jest"
     ],
     "overrides": [

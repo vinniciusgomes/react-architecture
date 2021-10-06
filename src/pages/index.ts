@@ -5,7 +5,7 @@
  */
 
 // Public
-export * from "./Public/SignIn";
+export * from './Public/SignIn';
 
 // Private
-export * from "./Dashboard";
+export * from './Dashboard';

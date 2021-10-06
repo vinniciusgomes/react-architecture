@@ -1,5 +1,6 @@
-import { Heading } from "components";
-import * as S from "./styles";
+import { Heading } from 'components';
+
+import * as S from './styles';
 
 export function SignIn() {
   return (

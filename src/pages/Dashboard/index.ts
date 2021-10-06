@@ -4,4 +4,4 @@
  * This file is responsible for exporting all files in subfolders.
  */
 
-export { Dashboard } from "./Dashboard";
+export { Dashboard } from './Dashboard';

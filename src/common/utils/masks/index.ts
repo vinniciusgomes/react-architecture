@@ -1,1 +1,1 @@
-export { formatCurrency } from "./currency";
+export { formatCurrency } from './currency';

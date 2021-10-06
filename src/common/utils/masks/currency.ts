@@ -1,10 +1,10 @@
 export function formatCurrency(
   value: number,
-  locale = "pt-BR",
-  currency = "BRL"
+  locale = 'pt-BR',
+  currency = 'BRL',
 ): string {
   const formattedCurrency = new Intl.NumberFormat(locale, {
-    style: "currency",
+    style: 'currency',
     currency,
   }).format(value);
 
