@@ -1,3 +1,10 @@
+import { Heading } from "components/Heading/styles";
+import * as S from "./styles";
+
 export function Dashboard() {
-  return <h1>Dashboard</h1>;
+  return (
+    <S.Container>
+      <Heading>Dashboard</Heading>
+    </S.Container>
+  );
 }

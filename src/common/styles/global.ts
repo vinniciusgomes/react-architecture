@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { font } from "./theme";
 
 export default createGlobalStyle`
    * {
@@ -16,16 +17,16 @@ export default createGlobalStyle`
   }
 
   body, input, textarea, button {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
+    font-family: ${font.family.Inter};
+    font-weight: ${font.normal};
   }
 
   h1, h2, h3, h4, h5, h6, strong {
-    font-weight: 600;
+    font-weight: ${font.semiBold};
   }
   
   span {
-    font-size: 1.6rem;
+    font-size: ${font.sizes.normal};
   }
 
   button {

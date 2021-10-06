@@ -1,3 +1,10 @@
+import { Heading } from "components";
+import * as S from "./styles";
+
 export function SignIn() {
-  return <h1>SignIn</h1>;
+  return (
+    <S.Container>
+      <Heading>SignIn</Heading>
+    </S.Container>
+  );
 }
