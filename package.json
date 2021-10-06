@@ -102,6 +102,7 @@
       "interfaces.ts",
       "reportWebVitals.ts",
       "\\.d\\.ts$",
+      "/src/routes/",
       "/node_modules/",
       "/src/index.tsx"
     ],
