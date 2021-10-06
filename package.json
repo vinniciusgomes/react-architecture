@@ -4,8 +4,12 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "lint": "./node_modules/.bin/eslint --fix \"./src/**/*.{ts,tsx,js,jsx}\"",
+    "prettier": "prettier --write . \"./src/**/*.{ts,tsx,js,jsx}\"",
+    "prepare": "husky install",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage --watchAll false",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
@@ -37,10 +41,17 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.3.0",
-    "@types/styled-components": "^5.1.14"
+    "@types/styled-components": "^5.1.14",
+    "husky": "^7.0.2",
+    "source-map-explorer": "^2.5.2"
   },
   "resolutions": {
     "babel-loader": "8.1.0"
+  },
+  "lint-staged": {
+    "./src/*": [
+      "npm run lint --fix"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -69,5 +80,31 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "clover",
+      "html"
+    ],
+    "collectCoverageFrom": [
+      "**/*.{tsx,jsx,ts}"
+    ],
+    "coveragePathIgnorePatterns": [
+      "^.+\\.ts$",
+      "/src/assets/",
+      "/node_modules/",
+      "/src/index.tsx"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
   }
 }
