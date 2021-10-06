@@ -90,11 +90,18 @@
       "html"
     ],
     "collectCoverageFrom": [
-      "**/*.{tsx,jsx,ts}"
+      "**/*.{tsx,jsx,ts}",
+      "!src/**/*.stories.{tsx,jsx,ts}"
     ],
     "coveragePathIgnorePatterns": [
-      "^.+\\.ts$",
-      "/src/assets/",
+      "index.ts",
+      "styles.ts",
+      "global.ts",
+      "theme.ts",
+      "api.ts",
+      "interfaces.ts",
+      "reportWebVitals.ts",
+      "\\.d\\.ts$",
       "/node_modules/",
       "/src/index.tsx"
     ],
