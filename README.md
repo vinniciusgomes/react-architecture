@@ -1,3 +1,29 @@
+<h1 align="center">
+  <br>
+  <a><img src=".github/architecture.png" alt="logo" width="100%"></a>
+  <br>
+</h1>
+
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/vinniciusgomes/react-architecture">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/vinniciusgomes/react-architecture">
+
+  <a href="https://github.com/vinniciusgomes/react-architecture/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vinniciusgomes/react-architecture">
+  </areact-architecture
+
+  <a href="https://github.com/vinniciusgomes/react-architecture/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/vinniciusgomes/react-architecture.svg">
+  </a>
+
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+  
+   <a href="https://github.com/vinniciusgomes/react-architecture/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/vinniciusgomes/react-architecture?style=social">
+  </a>
+</p>
+
 # React with Typescript reference architecture
 
 ### How to run
@@ -77,7 +103,7 @@ pages
 
 `./common`
 
-Here will be all your project assets as images, icons...
+Here are all the project assets that will be used by the application such as global styles, images, fonts, mocks, stories, reusable functions, among others
 
 `./components`
 
@@ -85,7 +111,7 @@ Components are presentational only elements, grouping UI items
 
 `./hooks`
 
-Services are responsible to handle the connection wi
+Hooks are functions that allow you to “plug in” to React's state and lifecycle features from functional components
 
 `./pages`
 
