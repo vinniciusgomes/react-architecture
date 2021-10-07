@@ -121,6 +121,9 @@ Pages are mapped in routes and have all the containers needed to implement a fun
 
 Routes contains the `react-router-dom` implementation to map the project's routes to the respective pages
 
+`./services`
+
+Contains all the files responsible for consuming external services, such as the axios configuration file for consuming RestFul APIs.
 
 ### More utils commands
 
