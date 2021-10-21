@@ -58,31 +58,6 @@
 <br />
 `yarn test`
 
-
-### How to lint
-
-`npm run lint`
-<br />
-`yarn lint`
-
-### How to analyze
-
-`npm run analyze`
-<br />
-`yarn analyze`
-
-### How to run prettier
-
-`npm run prettier`
-<br />
-`yarn prettier`
-
-### How to prepare
-
-`npm run prepare`
-<br />
-`yarn prepare`
-
 # File structure
 
 **This is your source code tree:**
