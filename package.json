@@ -117,6 +117,8 @@
       "\\.d\\.ts$",
       "/src/routes/",
       "/src/common/utils/",
+      "/src/configs/",
+      "/src/containers/",
       "/node_modules/",
       "/src/index.tsx"
     ],
