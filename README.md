@@ -11,7 +11,7 @@
 
   <a href="https://github.com/vinniciusgomes/react-architecture/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vinniciusgomes/react-architecture">
-  </areact-architecture
+  </a>
 
   <a href="https://github.com/vinniciusgomes/react-architecture/issues">
     <img alt="Repository issues" src="https://img.shields.io/github/issues/vinniciusgomes/react-architecture.svg">
@@ -34,17 +34,54 @@
 `yarn`
 `yarn start`
 
+### How to run Storybook
+
+`npm run storybook`
+<br />
+`yarn storybook`
+
 ### How to build
 
 `npm run build`
 <br />
 `yarn build`
 
+### How to build Storybook
+
+`npm run build-storybook`
+<br />
+`yarn build-storybook`
+
 ### How to tests
 
 `npm test`
 <br />
 `yarn test`
+
+
+### How to lint
+
+`npm run lint`
+<br />
+`yarn lint`
+
+### How to analyze
+
+`npm run analyze`
+<br />
+`yarn analyze`
+
+### How to run prettier
+
+`npm run prettier`
+<br />
+`yarn prettier`
+
+### How to prepare
+
+`npm run prepare`
+<br />
+`yarn prepare`
 
 # File structure
 
