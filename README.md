@@ -18,7 +18,7 @@
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-  
+
    <a href="https://github.com/vinniciusgomes/react-architecture/stargazers">
     <img alt="Stargazers" src="https://img.shields.io/github/stars/vinniciusgomes/react-architecture?style=social">
   </a>
@@ -59,6 +59,8 @@ src
    |-- styles
    |-- utils
 |-- components
+|-- config
+|-- container
 |-- hooks
 |-- pages
 |-- routes
@@ -108,6 +110,14 @@ Here are all the project assets that will be used by the application such as glo
 `./components`
 
 Components are presentational only elements, grouping UI items
+
+`./configs`
+
+Configs are our application's global settings files
+
+`./containers`
+
+Containers are responsible for handling dependency injection, decoupling the application from the library
 
 `./hooks`
 
