@@ -173,7 +173,6 @@ The project is already configured with:
 - Prettier
 - Styled
 - Story Book
-- Husky
 
 ### Main dependecies
 
@@ -188,7 +187,6 @@ The project is already configured with:
 
 - [testing-library](https://testing-library.com/)
 - [eslint](https://eslint.org/)
-- [husky](https://www.npmjs.com/package/husky)
 - [lint-staged](https://www.npmjs.com/package/lint-staged)
 - [prettier](https://prettier.io/)
 - [source-map-explorer](https://www.npmjs.com/package/source-map-explorer)
