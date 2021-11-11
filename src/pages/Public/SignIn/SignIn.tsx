@@ -5,7 +5,7 @@ import * as S from './styles';
 export function SignIn() {
   return (
     <S.Container>
-      <Heading>SignIn</Heading>
+      <Heading level={1}>SignIn</Heading>
     </S.Container>
   );
 }
