@@ -4,15 +4,17 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
-    "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "lint": "./node_modules/.bin/eslint --fix \"./src/**/*.{ts,tsx,js,jsx}\"",
-    "prettier": "prettier --write . \"./src/**/*.{ts,tsx,js,jsx}\"",
-    "prepare": "husky install",
     "build": "react-scripts build",
     "test": "react-scripts test --coverage --watchAll false",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "lint": "./node_modules/.bin/eslint --fix \"./src/**/*.{ts,tsx,js,jsx}\"",
+    "prettier": "prettier --write . \"./src/**/*.{ts,tsx,js,jsx}\"",
+    "format": "prettier \"./src/**/*.{ts,tsx}\" --write",
+    "generate": "yarn plop --plopfile ./generators/plopfile.js",
+    "prepare": "husky install"
   },
   "dependencies": {
     "axios": "^0.24.0",
@@ -55,7 +57,7 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-security": "^1.4.0",
-    "husky": "^7.0.4",
+    "husky": "^5.1.3",
     "prettier": "^2.4.1",
     "source-map-explorer": "^2.5.2"
   },
