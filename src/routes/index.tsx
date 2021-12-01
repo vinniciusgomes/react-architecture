@@ -9,7 +9,7 @@ import Private from './Private';
 import Public from './Public';
 
 function Routes() {
-  const user = false;
+  const user = false; // This variable is responsible for checking if the user is logged in.
 
   return <Switch>{user ? <Private /> : <Public />}</Switch>;
 }
