@@ -1,4 +1,4 @@
-import { breakpoints, font } from 'common/styles/theme';
+import { font } from 'common/styles/theme';
 import styled, { css } from 'styled-components';
 
 import HeadingProps from './interfaces';
