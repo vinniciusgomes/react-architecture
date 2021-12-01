@@ -1,4 +1,4 @@
-import { font } from 'common/styles/theme';
+import { breakpoints, font } from 'common/styles/theme';
 import styled, { css } from 'styled-components';
 
 import HeadingProps from './interfaces';
@@ -42,9 +42,9 @@ export const Heading = styled('h1').attrs<HeadingProps>(({ level }) => ({
   as: `h${level}`,
 }))<HeadingProps>`
   ${({ level, italic, bold }) => css`
-    font-weight: ${font.normal};
+    font-weight: ${font.bold};
     font-style: normal;
-    font-family: ${font.family.Inter};
+    font-family: ${font.family.Playfair};
     ${!!level && headingModifier.level[level]()}
     ${!!bold && headingModifier.bold()}
     ${!!italic && headingModifier.italic()}

@@ -43,7 +43,8 @@ export const font = {
     heading01: '4.2rem',
   },
   lineHeight: {
-    xSmall: '1.8rem',
+    xxsmall: '1.6',
+    xsmall: '1.8rem',
     small: '2.1rem',
     normal: '2.4rem',
     large: '2.7rem',
@@ -55,7 +56,8 @@ export const font = {
     heading01: '5rem',
   },
   family: {
-    Inter: "'Inter',sans-serif",
+    Lato: "'Lato',sans-serif",
+    Playfair: "'Playfair Display', serif",
   },
 } as const;
 

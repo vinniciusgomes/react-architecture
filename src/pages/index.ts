@@ -4,6 +4,4 @@
  * This file is responsible for exporting all files in subfolders.
  */
 
-export { SignIn } from './SignIn';
-
-export { Dashboard } from './Dashboard';
+export { Home } from './Home';

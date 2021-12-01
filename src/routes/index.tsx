@@ -5,7 +5,7 @@
  */
 import { Routes as ReactRouterDomRoutes, Route } from 'react-router-dom';
 
-import { Dashboard, SignIn } from 'pages';
+import { Home } from 'pages';
 
 import { PrivateRoute, PublicRoute } from './Routes';
 
@@ -19,12 +19,7 @@ const routes: Routes[] = [
   {
     path: '/',
     isPrivate: false,
-    element: <SignIn />,
-  },
-  {
-    path: '/dashboard',
-    isPrivate: true,
-    element: <Dashboard />,
+    element: <Home />,
   },
 ];
 
