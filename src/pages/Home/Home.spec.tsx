@@ -6,7 +6,7 @@ describe('<Home />', () => {
   it('should render', () => {
     render(<Home />);
     expect(
-      screen.getByText(/Welcome to my React Achitecture/i),
+      screen.getByText(/Welcome to my React Architecture/i),
     ).toBeInTheDocument();
   });
 });
