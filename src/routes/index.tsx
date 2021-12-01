@@ -3,15 +3,49 @@
  * This file is for:
  * This file is responsible for validating whether the client will access private routes if logged in or if it will use public routes.
  */
-import { Switch } from 'react-router-dom';
+import { Routes as ReactRouterDomRoutes, Route } from 'react-router-dom';
 
-import Private from './Private';
-import Public from './Public';
+import { Dashboard, SignIn } from 'pages';
 
-function Routes() {
-  const user = false; // This variable is responsible for checking if the user is logged in.
+import { PrivateRoute, PublicRoute } from './Routes';
 
-  return <Switch>{user ? <Private /> : <Public />}</Switch>;
+interface Routes {
+  path: string;
+  isPrivate: boolean;
+  element: JSX.Element;
 }
 
-export default Routes;
+const routes: Routes[] = [
+  {
+    path: '/',
+    isPrivate: false,
+    element: <SignIn />,
+  },
+  {
+    path: '/dashboard',
+    isPrivate: true,
+    element: <Dashboard />,
+  },
+];
+
+export function Routes() {
+  return (
+    <ReactRouterDomRoutes>
+      {routes.map(({ path, isPrivate, element }) =>
+        isPrivate ? (
+          <Route
+            key={path}
+            path={path}
+            element={<PrivateRoute>{element}</PrivateRoute>}
+          />
+        ) : (
+          <Route
+            key={path}
+            path={path}
+            element={<PublicRoute>{element}</PublicRoute>}
+          />
+        ),
+      )}
+    </ReactRouterDomRoutes>
+  );
+}
