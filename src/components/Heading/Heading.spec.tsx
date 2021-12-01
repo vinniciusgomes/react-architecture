@@ -11,12 +11,6 @@ describe('<Heading />', () => {
     expect(heading).toBeInTheDocument();
 
     expect(heading).toHaveStyle({
-      'font-weight': 400,
-      'font-style': 'normal',
-      'font-family': "'Inter',sans-serif",
-    });
-
-    expect(heading).toHaveStyle({
       'font-size': '4.2rem',
       'line-height': '5rem',
     });
