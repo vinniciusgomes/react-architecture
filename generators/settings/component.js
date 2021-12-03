@@ -40,7 +40,7 @@ module.exports = {
     },
     {
       path: '../src/components/index.ts',
-      template: "export { {{pascalCase name}} } from './{{pascalCase name}}';",
+      template: "export { {{pascalCase name}} } from './{{pascalCase name}}';\n",
       type: 'append',
     },
   ],

@@ -7,7 +7,7 @@ export function Home() {
   return (
     <S.Container>
       <img src={IconImage} alt="Icon" />
-      <Heading level={1}>Welcome to my React Achitecture</Heading>
+      <Heading level={1}>Welcome to my React Architecture</Heading>
       <p>
         This project was created to be used as the basis for React applications.
         The architecture was designed aiming at the organization and scalability
