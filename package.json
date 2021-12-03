@@ -11,7 +11,8 @@
     "lint": "./node_modules/.bin/eslint --fix \"./src/**/*.{ts,tsx,js,jsx}\"",
     "prettier": "prettier --write . \"./src/**/*.{ts,tsx,js,jsx}\"",
     "format": "prettier \"./src/**/*.{ts,tsx}\" --write",
-    "generate": "plop --plopfile ./generators/plopfile.js",
+    "new:page": "plop --plopfile ./generators/plopfile.js page",
+    "new:component": "plop --plopfile ./generators/plopfile.js component",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"

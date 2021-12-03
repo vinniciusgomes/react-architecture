@@ -1,4 +1,4 @@
-import HeadingProps from './interfaces';
+import { HeadingProps } from './interfaces';
 import * as S from './styles';
 
 export function Heading({

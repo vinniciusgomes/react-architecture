@@ -1,9 +1,10 @@
+import { {{pascalCase name}}Props } from './interfaces';
 import * as S from './styles';
 
-export function {{pascalCase name}}() {
+export function {{pascalCase name}}({ text }: {{pascalCase name}}Props) {
   return (
     <S.Container>
-      <h1>{{pascalCase name}}</h1>
+      <h1>{text}</h1>
     </S.Container>
   );
 }

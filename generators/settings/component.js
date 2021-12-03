@@ -34,6 +34,11 @@ module.exports = {
       templateFile: 'templates/components/stories.tsx.hbs',
     },
     {
+      type: 'add',
+      path: '../src/components/{{pascalCase name}}/interfaces.ts',
+      templateFile: 'templates/components/interfaces.ts.hbs',
+    },
+    {
       path: '../src/components/index.ts',
       template: "export { {{pascalCase name}} } from './{{pascalCase name}}';",
       type: 'append',
