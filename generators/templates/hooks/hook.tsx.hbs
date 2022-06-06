@@ -9,13 +9,13 @@ function {{pascalCase name}}Provider({children}: I{{pascalCase name}}Context) {
   const [text, setText] = useState<string>('');
 
   return (
-    <IgnoreContext.Provider
+    <{{pascalCase name}}Context.Provider
       value=\{{
         text,
       }}
     >
       {children}
-    </IgnoreContext.Provider>
+    <{{pascalCase name}}Context.Provider/>
   );
 }
 
