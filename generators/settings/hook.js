@@ -1,5 +1,5 @@
 module.exports = {
-  description: 'Creates a new component',
+  description: 'Creates a new hook',
   prompts: [
     {
       type: 'input',
@@ -20,11 +20,6 @@ module.exports = {
     },
     {
       type: 'add',
-      path: '../src/models/{{pascalCase name}}.ts',
-      templateFile: 'templates/hooks/model.ts.hbs',
-    },
-    {
-      type: 'add',
       path: '../src/hooks/{{pascalCase name}}/interface.ts',
       templateFile: 'templates/hooks/interface.ts.hbs',
     },
@@ -32,6 +27,11 @@ module.exports = {
       path: '../src/hooks/index.tsx',
       template: "export { {{pascalCase name}} } from './{{pascalCase name}}';\n",
       type: 'append',
+    },
+    {
+      type: 'add',
+      path: '../src/models/{{pascalCase name}}.ts',
+      templateFile: 'templates/hooks/model.ts.hbs',
     },
     {
       path: '../src/models/index.ts',
