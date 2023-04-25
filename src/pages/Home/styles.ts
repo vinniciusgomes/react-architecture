@@ -1,4 +1,4 @@
-import { font, primaryColors, breakpoints } from 'common/styles/theme';
+import { font, primaryColors, breakpoints } from 'styles/theme';
 import styled from 'styled-components';
 
 export const Container = styled.div`

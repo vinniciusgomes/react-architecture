@@ -4,4 +4,4 @@
  * This file is responsible for exporting all files in subfolders.
  */
 
-export { Home } from './Home';
+export { default as Home } from './Home';

@@ -10,8 +10,8 @@ module.exports = {
   actions: [
     {
       type: 'add',
-      path: '../src/pages/{{pascalCase name}}/{{pascalCase name}}.tsx',
-      templateFile: 'templates/page/page.tsx.hbs',
+      path: '../src/pages/{{pascalCase name}}/index.tsx',
+      templateFile: 'templates/page/index.tsx.hbs',
     },
     {
       type: 'add',
@@ -25,16 +25,11 @@ module.exports = {
     },
     {
       type: 'add',
-      path: '../src/pages/{{pascalCase name}}/index.ts',
-      templateFile: 'templates/page/index.ts.hbs',
-    },
-    {
-      type: 'add',
       path: '../src/pages/{{pascalCase name}}/components/.gitkeep',
     },
     {
       path: '../src/pages/index.ts',
-      template: "export { {{pascalCase name}} } from './{{pascalCase name}}';\n",
+      template: "export { default as {{pascalCase name}} } from './{{pascalCase name}}';\n",
       type: 'append',
     },
   ],

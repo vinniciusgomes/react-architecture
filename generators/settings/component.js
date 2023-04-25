@@ -10,13 +10,8 @@ module.exports = {
   actions: [
     {
       type: 'add',
-      path: '../src/components/{{pascalCase name}}/index.ts',
-      templateFile: 'templates/components/index.ts.hbs',
-    },
-    {
-      type: 'add',
-      path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.tsx',
-      templateFile: 'templates/components/component.tsx.hbs',
+      path: '../src/components/{{pascalCase name}}/index.tsx',
+      templateFile: 'templates/components/index.tsx.hbs',
     },
     {
       type: 'add',
@@ -40,7 +35,7 @@ module.exports = {
     },
     {
       path: '../src/components/index.ts',
-      template: "export { {{pascalCase name}} } from './{{pascalCase name}}';\n",
+      template: "export { default as {{pascalCase name}} } from './{{pascalCase name}}';\n",
       type: 'append',
     },
   ],

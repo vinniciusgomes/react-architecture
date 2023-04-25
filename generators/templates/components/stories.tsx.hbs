@@ -1,14 +1,14 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import { {{pascalCase name}} } from './{{pascalCase name}}';
-import { {{pascalCase name}}Props } from './interfaces';
+import {{pascalCase name}} from './';
+import { I{{pascalCase name}}Props } from './interfaces';
 
 export default {
   title: 'Components/{{pascalCase name}}',
   component: {{pascalCase name}},
 } as Meta;
 
-export const Default: Story<{{pascalCase name}}Props> = args => <{{pascalCase name}} {...args} />;
+export const Default: Story<I{{pascalCase name}}Props> = args => <{{pascalCase name}} {...args} />;
 
 Default.args = {
   text: 'Hello Storybook',

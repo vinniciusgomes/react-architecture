@@ -1,4 +1,4 @@
-import { font } from 'common/styles/theme';
+import { font } from 'styles/theme';
 import styled, { css } from 'styled-components';
 
 import { HeadingProps } from './interfaces';

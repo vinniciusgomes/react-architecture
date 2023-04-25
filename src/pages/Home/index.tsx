@@ -3,7 +3,7 @@ import { Heading } from 'components';
 
 import * as S from './styles';
 
-export function Home() {
+export default function Home() {
   return (
     <S.Container>
       <img src={IconImage} alt="Icon" />

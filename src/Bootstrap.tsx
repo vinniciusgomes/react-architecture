@@ -1,6 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 
-import GlobalStyles from 'common/styles/global';
+import GlobalStyles from 'styles/global';
 import { Routes } from 'routes';
 
 function Bootstrap() {
