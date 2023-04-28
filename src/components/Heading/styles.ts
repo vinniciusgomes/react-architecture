@@ -1,7 +1,7 @@
-import { font } from 'styles/theme';
 import styled, { css } from 'styled-components';
+import { font } from 'styles/theme';
 
-import { HeadingProps } from './interfaces';
+import { IHeadingProps } from './interfaces';
 
 const headingModifier = {
   level: {
@@ -38,9 +38,9 @@ const headingModifier = {
   `,
 };
 
-export const Heading = styled('h1').attrs<HeadingProps>(({ level }) => ({
+export const Heading = styled('h1').attrs<IHeadingProps>(({ level }) => ({
   as: `h${level}`,
-}))<HeadingProps>`
+}))<IHeadingProps>`
   ${({ level, italic, bold }) => css`
     font-weight: ${font.bold};
     font-style: normal;

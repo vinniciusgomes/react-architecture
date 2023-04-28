@@ -49,6 +49,7 @@
     "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/parser": "^5.14.0",
     "babel-eslint": "^10.1.0",
+    "cypress": "^12.11.0",
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
@@ -125,16 +126,16 @@
       "styles.ts",
       "global.ts",
       "theme.ts",
-      "api.ts",
       "interfaces.ts",
       "reportWebVitals.ts",
-      "\\.d\\.ts$",
       "/src/routes/",
-      "/src/common/utils/",
+      "/src/services/",
+      "/src/libs/",
+      "/src/utils/",
       "/src/configs/",
-      "/src/containers/",
       "/node_modules/",
-      "/src/index.tsx"
+      "/src/index.tsx",
+      "\\.d\\.ts$"
     ],
     "coverageThreshold": {
       "global": {

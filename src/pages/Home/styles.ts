@@ -1,5 +1,5 @@
-import { font, primaryColors, breakpoints } from 'styles/theme';
 import styled from 'styled-components';
+import { font, primaryColors, breakpoints } from 'styles/theme';
 
 export const Container = styled.div`
   height: 100vh;

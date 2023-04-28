@@ -1,15 +1,19 @@
-import { HeadingProps } from './interfaces';
+import { memo } from 'react';
+
+import { IHeadingProps } from './interfaces';
 import * as S from './styles';
 
-export function Heading({
+const Heading = ({
   children,
   level = 1,
   italic = false,
   bold = false,
-}: HeadingProps) {
+}: IHeadingProps) => {
   return (
     <S.Heading level={level} italic={italic} bold={bold}>
       {children}
     </S.Heading>
   );
-}
+};
+
+export default memo(Heading);

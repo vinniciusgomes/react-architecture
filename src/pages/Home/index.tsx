@@ -1,4 +1,4 @@
-import IconImage from 'common/assets/images/icon.png';
+import IconImage from 'assets/images/icon.png';
 import { Heading } from 'components';
 
 import * as S from './styles';

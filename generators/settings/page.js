@@ -29,8 +29,9 @@ module.exports = {
     },
     {
       path: '../src/pages/index.ts',
-      template: "export { default as {{pascalCase name}} } from './{{pascalCase name}}';\n",
+      template:
+        "export { default as {{pascalCase name}} } from './{{pascalCase name}}';\n",
       type: 'append',
     },
   ],
-}
+};
